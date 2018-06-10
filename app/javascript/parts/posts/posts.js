@@ -53,6 +53,5 @@ export default {
     destroyPost(post) {
       this.destroy(post)
     }
-
   }
 };

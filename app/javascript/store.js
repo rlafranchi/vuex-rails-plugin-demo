@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import createRailsPlugin from 'plugins/rails'
+import VuexRailsPlugin from 'vuex-rails-plugin/src/VuexRailsPlugin'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {},
-  plugins: [createRailsPlugin('posts'), createRailsPlugin('categories')]
+  plugins: [VuexRailsPlugin('posts')]
 })
